@@ -3,19 +3,19 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
 }
 .fontAwesome {
   font-family: "fontAwesome" !important;
@@ -322,33 +322,6 @@ table.users tfoot th a .sorting-indicator:before,
 table.pages tfoot th a .sorting-indicator:before,
 table.tags tfoot th a .sorting-indicator:before {
   left: 0;
-}
-table.posts tbody td .row-actions,
-table.users tbody td .row-actions,
-table.pages tbody td .row-actions,
-table.tags tbody td .row-actions,
-table.posts thead td .row-actions,
-table.users thead td .row-actions,
-table.pages thead td .row-actions,
-table.tags thead td .row-actions,
-table.posts tfoot td .row-actions,
-table.users tfoot td .row-actions,
-table.pages tfoot td .row-actions,
-table.tags tfoot td .row-actions,
-table.posts tbody th .row-actions,
-table.users tbody th .row-actions,
-table.pages tbody th .row-actions,
-table.tags tbody th .row-actions,
-table.posts thead th .row-actions,
-table.users thead th .row-actions,
-table.pages thead th .row-actions,
-table.tags thead th .row-actions,
-table.posts tfoot th .row-actions,
-table.users tfoot th .row-actions,
-table.pages tfoot th .row-actions,
-table.tags tfoot th .row-actions {
-  max-height: 0;
-  opacity: 0;
 }
 table.posts tbody td.column-date,
 table.users tbody td.column-date,
@@ -1101,4 +1074,31 @@ span.tablenav-paging-text {
   .tablenav .tablenav-pages {
     margin: 0 0 25px;
   }
+}
+.wp-list-table .row-actions {
+  left: 0;
+  max-height: initial;
+  opacity: 0;
+  margin-top: -8px;
+}
+.wp-list-table .row-actions span {
+  margin-bottom: 0;
+}
+.wp-list-table .row-actions span a,
+.wp-list-table .row-actions span button {
+  background: #e0e0e0;
+  color: #212121;
+  font-size: 12px !important;
+  text-align: center;
+  padding: 2px 13px !important;
+  box-sizing: content-box;
+  max-height: initial;
+  max-width: 60px;
+}
+.wp-list-table tr:hover .row-actions {
+  opacity: 1;
+}
+.wp-list-table .inline-edit-row > td.colspanchange {
+  border: 1px solid #d8d8d8 !important;
+  padding: 20px !important;
 }

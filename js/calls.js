@@ -70,33 +70,33 @@ $j(document).ready(function() {
 		  };
 	});
 
-	// Hover Animation
-	function setMouseEventHandler()
-	{
-		$j('tbody tr').on('mouseenter', function () {
-			var $el = $j(this);
-			setTimeout(function () {
-				if ($el.is(':hover')) {
-					$el.addClass('hovered');
-				}
-			}, 400);
-		});
-
-		$j('tbody tr').on('click', function () {
-			$j(this).addClass('hovered');
-		});
-
-		$j('tbody > tr').on('mouseleave', function () {
-			var $el = $j(this);
-			$el.removeClass('hovered');
-		});
-	}
-	setMouseEventHandler();
-
-	$j('tbody tr').ajaxStop(function()
-	{
-		setMouseEventHandler();
-	})
+	// // Hover Animation
+	// function setMouseEventHandler()
+	// {
+	// 	$j('tbody tr').on('mouseenter', function () {
+	// 		var $el = $j(this);
+	// 		setTimeout(function () {
+	// 			if ($el.is(':hover')) {
+	// 				$el.addClass('hovered');
+	// 			}
+	// 		}, 400);
+	// 	});
+    //
+	// 	$j('tbody tr').on('click', function () {
+	// 		$j(this).addClass('hovered');
+	// 	});
+    //
+	// 	$j('tbody > tr').on('mouseleave', function () {
+	// 		var $el = $j(this);
+	// 		$el.removeClass('hovered');
+	// 	});
+	// }
+	// setMouseEventHandler();
+    //
+	// $j('tbody tr').ajaxStop(function()
+	// {
+	// 	setMouseEventHandler();
+	// })
 })
 
 // Media manager
