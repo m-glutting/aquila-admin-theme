@@ -1079,10 +1079,10 @@ span.tablenav-paging-text {
   left: 0;
   max-height: initial;
   opacity: 0;
-  margin-top: -8px;
+  margin-top: 0px;
 }
 .wp-list-table .row-actions span {
-  margin-bottom: 0;
+  margin: 2px 4px 2px 0;
 }
 .wp-list-table .row-actions span a,
 .wp-list-table .row-actions span button {
