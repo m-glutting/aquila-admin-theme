@@ -1000,6 +1000,30 @@ table.publish-channel-column tbody td {
 .published-channel.published-web:before {
   content: "\f472";
 }
+.published-channel.published-apple-news:before {
+    content: "";
+    background-image:url('../icons/fonts/apple_logo_black.svg');
+    background-size: 100% 100%;
+    display: inline-block;
+    opacity: .3;
+    height: 25px;
+    width: 25px;
+
+    position:relative;
+    top:6px;
+ }
+
+.published-channel.published-apple-news.published:before {
+    content: "";
+    background-image:url('../icons/fonts/apple_logo_black.svg');
+    background-size: 100% 100%;
+    display: inline-block;
+    opacity: 1;
+    height: 25px;
+    width: 25px;
+    position:relative;
+    top:6px;
+}
 .published-channel.published:before {
   color: black;
 }
