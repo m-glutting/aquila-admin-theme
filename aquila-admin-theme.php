@@ -9,15 +9,16 @@
  * License: GPL2
  *
  * 2018 Guy Primavera
- */ 
+ */
 
 $aquilaVer = "2.4";
 
+include ('admin/options/options.php');
 include ('scripts.php');
+
 include ('login/aquila-login-screen.php');
 include ('admin/dashboard.php');
 include ('admin/adminBar.php');
-include ('admin/options/options.php');
 include ('admin/colour/colourScheme.php');
 
 // Plugin action links

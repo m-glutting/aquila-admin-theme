@@ -8,21 +8,21 @@ function clean_output_buffer() {
 // Custom Logo
 $aquilaLogoSettings = get_option( 'aquilaLogoSettings' );
 $aquilaNewLogo = $aquilaLogoSettings['aquila_new_logo'];
-$aquilaNewLogoSqr = $aquilaLogoSettings['aquila_new_logo_sqr']; 
+$aquilaNewLogoSqr = $aquilaLogoSettings['aquila_new_logo_sqr'];
 
 $GLOBALS['aquilaNewLogo'] = $aquilaNewLogo;
 $GLOBALS['aquilaNewLogoSqr'] = $aquilaNewLogoSqr;
 
 if( isset($aquilaLogoSettings['aquila_new_logo']) && $aquilaLogoSettings['aquila_new_logo'] !== "" ) {
-	add_action( 'admin_head', 'aquila_new_logo_admin', 90); 
-	add_action( 'wp_head', 'aquila_new_logo_admin', 90); 
-	add_action( 'login_head', 'aquila_new_logo_login', 90 ); 
+	add_action( 'admin_head', 'aquila_new_logo_admin', 90);
+	add_action( 'wp_head', 'aquila_new_logo_admin', 90);
+	add_action( 'login_head', 'aquila_new_logo_login', 90 );
 }
 
 // Custom Logo (square)
 if( isset($aquilaLogoSettings['aquila_new_logo_sqr']) && $aquilaLogoSettings['aquila_new_logo_sqr'] !== "" ) {
-	add_action( 'admin_head', 'aquila_new_logo_sqr_admin', 90 ); 
-	add_action( 'wp_head', 'aquila_new_logo_sqr_admin', 90 ); 
+	add_action( 'admin_head', 'aquila_new_logo_sqr_admin', 90 );
+	add_action( 'wp_head', 'aquila_new_logo_sqr_admin', 90 );
 }
 
 // Admin bar
@@ -68,26 +68,6 @@ function aquila_new_logo_admin() {
 	</style>";
 }
 
-// Login screen
-function aquila_new_logo_login() {
-	echo "<style type='text/css'>
-		body.login #login:before {
-			display: none!important;
-		}
-		body.login #login h1 a {
-			display: block!important;
-		}
-		body.login #login h1 a {
-			background-image: url('" . $GLOBALS['aquilaNewLogo'] . "')!important;
-			background-size: contain;
-	    background-repeat: no-repeat;
-	    background-position: center center;
-	    width: auto;
-	    height: 80px;
-	    max-width: 350px;
-		}
-	</style>";
-}
 
 function aquila_new_logo_sqr_admin() {
 	echo "<style type='text/css'>
